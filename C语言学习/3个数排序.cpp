@@ -1,7 +1,7 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 int main(){
     int x,y,z;
-    printf("ÇëÊäÈëÈı¸öÊı×Ö");
+    printf("è¯·è¾“å…¥ä¸‰ä¸ªæ•°å­—");
     scanf_s("%d%d%d",&x,&y,&z);
     if(x<y){
         int zuida=x;
@@ -18,5 +18,5 @@ int main(){
         y=z;
         z=zuida;
     }
-    printf("Ë³Ğò\n %d\n %d\n %d\n",x,y,z);
+    printf("é¡ºåº\n %d\n %d\n %d\n",x,y,z);
 }
