@@ -20,3 +20,4 @@ int main(){
     }
     printf("顺序\n %d\n %d\n %d\n",x,y,z);
 }
+//
