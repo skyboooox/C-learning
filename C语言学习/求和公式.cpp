@@ -7,3 +7,4 @@ int main()
 	printf("b=a*(n+1)/2");
 	return 0;
 }
+//zcj924

@@ -14,4 +14,5 @@ int main() {
 		printf("Сд:%c\n", a);
 	}
 	return 0;}
+//zcj924
 
