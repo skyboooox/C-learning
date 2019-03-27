@@ -1,17 +1,17 @@
-#include<iostream>
+ï»¿#include<iostream>
 int main() {
 	char a;
-	printf("ÇëÊäÈë×ÖÄ¸:");
+	printf("è¯·è¾“å…¥å­—æ¯:");
 	scanf_s("%c", &a);
 	if (a <= 91)
 	{
 		a = a + 32;
-			printf("¡ä´óĞ´:%c\n", a);
+			printf("â€²å¤§å†™:%c\n", a);
 	}
 	else
 	{
 		a = a - 32;
-		printf("Ğ¡Ğ´:%c\n", a);
+		printf("å°å†™:%c\n", a);
 	}
 	return 0;}
 //zcj924

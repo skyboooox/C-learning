@@ -1,7 +1,7 @@
-#include <stdio.h> 
+ï»¿#include <stdio.h> 
 int main(){
 	float a,b,c,zuida;
-	printf("ÇëÊäÈëÈý¸öÊý×Ö");
+	printf("è¯·è¾“å…¥ä¸‰ä¸ªæ•°å­—");
 	scanf_s("%f%f%f", &a, &b, &c);
 	
 	zuida = a>b ? a:b;

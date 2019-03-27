@@ -1,8 +1,8 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 int main()
 {
 	int a, b;
-	printf("ÇëÊäÈë a");
+	printf("è¯·è¾“å…¥ a");
 	scanf("%d,$a");
 	printf("b=a*(n+1)/2");
 	return 0;
