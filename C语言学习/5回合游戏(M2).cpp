@@ -1,17 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>//Ëæ»úÊı
-#include <time.h>//µ÷ÓÃÊ±¼ä
+ï»¿#include <stdio.h>
+#include <stdlib.h>//éšæœºæ•°
+#include <time.h>//è°ƒç”¨æ—¶é—´
 int main()
 {
-	printf("»¶Ó­,±¾ÓÎÏ·ÎªÃ¿´ÎºÍµçÄÔËæ»ú³éÊı×Ö,5»ØºÏºó×î´óµÄÎªÊ¤Àû·½\n\n");
-	printf("ÇëÊäÈëÄãµÄÃû×Ö,1¸ö×Ö\n");
-	char name;//ÓÃ»§Ãû
+	printf("æ¬¢è¿,æœ¬æ¸¸æˆä¸ºæ¯æ¬¡å’Œç”µè„‘éšæœºæŠ½æ•°å­—,5å›åˆåæœ€å¤§çš„ä¸ºèƒœåˆ©æ–¹\n\n");
+	printf("è¯·è¾“å…¥ä½ çš„åå­—,1ä¸ªå­—\n");
+	char name;//ç”¨æˆ·å
 	scanf_s("%c", &name,sizeof(name));
-	printf("ÄãµÄÃû×ÖÊÇ%c,¿ªÊ¼ÓÎÏ·\n",name);
-		//Éú³ÉËæ»úÊı
-	int a1,a2,a3,a4,a5,b1,b2,b3,b4,b5;//aµçÄÔ,bÓÃ»§
-	srand((unsigned)time(NULL));//ÓÃÊ±¼ä³õÊ¼»¯Ëæ»úÊıÖÖ×Ó¿â,unsignedÎŞ·ûºÅĞÍ
-		a1 = rand() % 10;//Ëæ»úµÚ1»ØºÏ
+	printf("ä½ çš„åå­—æ˜¯%c,å¼€å§‹æ¸¸æˆ\n",name);
+		//ç”Ÿæˆéšæœºæ•°
+	int a1,a2,a3,a4,a5,b1,b2,b3,b4,b5;//aç”µè„‘,bç”¨æˆ·
+	srand((unsigned)time(NULL));//ç”¨æ—¶é—´åˆå§‹åŒ–éšæœºæ•°ç§å­åº“,unsignedæ— ç¬¦å·å‹
+		a1 = rand() % 10;//éšæœºç¬¬1å›åˆ
 		a2 = rand() % 10;
 		a3 = rand() % 10;
 		a4 = rand() % 10;
@@ -22,7 +22,7 @@ int main()
 		b3 = rand() % 10;
 		b4 = rand() % 10;
 		b5 = rand() % 10;
-		//¼ÆËãÃ¿»ØºÏ,c µçÄÔ×ÜÊı.d ÓÃ»§×ÜÊı
+		//è®¡ç®—æ¯å›åˆ,c ç”µè„‘æ€»æ•°.d ç”¨æˆ·æ€»æ•°
 	int c2, d2;
 		c2 = a1 + a2;
 		d2 = b1 + b2;
@@ -35,19 +35,20 @@ int main()
 	int c5, d5;
 		c5 = c4 + a5;
 		d5 = d4 + a5;
-	printf("\nµÚ 1 »ØºÏ:\nµçÄÔ:%d\n%c:%d", a1, name, b1);//1»ØºÏ
-	printf("\nµÚ 2 »ØºÏ:\nµçÄÔ:%d\n%c:%d", c2, name, d2);//2»ØºÏ
-	printf("\nµÚ 3 »ØºÏ:\nµçÄÔ:%d\n%c:%d", c3, name, d3);//3»ØºÏ
-	printf("\nµÚ 4 »ØºÏ:\nµçÄÔ:%d\n%c:%d", c4, name, d4);//2»ØºÏ
-	printf("\nµÚ 5 »ØºÏ:\nµçÄÔ:%d\n%c:%d", c5, name, d5);//2»ØºÏ
+	printf("\nç¬¬ 1 å›åˆ:\nç”µè„‘:%d\n%c:%d", a1, name, b1);//1å›åˆ
+	printf("\nç¬¬ 2 å›åˆ:\nç”µè„‘:%d\n%c:%d", c2, name, d2);//2å›åˆ
+	printf("\nç¬¬ 3 å›åˆ:\nç”µè„‘:%d\n%c:%d", c3, name, d3);//3å›åˆ
+	printf("\nç¬¬ 4 å›åˆ:\nç”µè„‘:%d\n%c:%d", c4, name, d4);//2å›åˆ
+	printf("\nç¬¬ 5 å›åˆ:\nç”µè„‘:%d\n%c:%d", c5, name, d5);//2å›åˆ
 	if (c5 < d5) {
-		printf("\n\nÄãÓ®ÁË");
+		printf("\n\nä½ èµ¢äº†");
 	}
 	else if(c5>d5){
-		printf("\n\nÄãÊäÁË");
+		printf("\n\nä½ è¾“äº†");
 	}
 	else if (c5 > d5) {
-		printf("\n\nÆ½¾Ö");
+		printf("\n\nå¹³å±€");
 	}
 	return 0;
 }
+//

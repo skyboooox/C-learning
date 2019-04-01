@@ -1,4 +1,4 @@
-﻿#include<stdio.h>
+#include<stdio.h>
 int main(){
     int x,y,z;
     printf("请输入三个数字");

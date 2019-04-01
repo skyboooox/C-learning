@@ -1,55 +1,55 @@
-#include <stdio.h>
-#include <stdlib.h>//Ëæ»úÊı
-#include <time.h>//µ÷ÓÃÊ±¼ä
-#include <math.h>//ÊıÑ§º¯Êı
+ï»¿#include <stdio.h>
+#include <stdlib.h>//éšæœºæ•°
+#include <time.h>//è°ƒç”¨æ—¶é—´
+#include <math.h>//æ•°å­¦å‡½æ•°
 /*
-Ê¯Í·=>0
-¼ôµ¶=>1
-²¼ =>2
-ÍË³ö=>3
+çŸ³å¤´=>0
+å‰ªåˆ€=>1
+å¸ƒ =>2
+é€€å‡º=>3
 */
 int main() {
-	//char i[4] = { 'Ê¯Í·', '¼ôµ¶', '²¼', '\0' };//½«¼¸¸öÃû³Æ·ÅÈëÊı×éÖĞ·½±ã¶ÁÈ¡,md²»»á,·ÅÆú
+	//char i[4] = { 'çŸ³å¤´', 'å‰ªåˆ€', 'å¸ƒ', '\0' };//å°†å‡ ä¸ªåç§°æ”¾å…¥æ•°ç»„ä¸­æ–¹ä¾¿è¯»å–,mdä¸ä¼š,æ”¾å¼ƒ
 	int wanjia,computer;
 	while(1)
 	{
-		printf("      ²ÂÈ­ÓÎÏ·\n*ÊäÈëÊı×Ö,°´»Ø³µ¼ÌĞø*\n     0==>Ê¯Í·\n     1==>¼ôµ¶\n     2==>²¼\n\n     3==>ÍË³ö\n");
-		//¶ÁÈ¡Íæ¼Ò
+		printf("      çŒœæ‹³æ¸¸æˆ\n*è¾“å…¥æ•°å­—,æŒ‰å›è½¦ç»§ç»­*\n     0==>çŸ³å¤´\n     1==>å‰ªåˆ€\n     2==>å¸ƒ\n\n     3==>é€€å‡º\n");
+		//è¯»å–ç©å®¶
 		scanf_s("%d", &wanjia);
-		if (wanjia == 3) //ÊäÈë3ÍË³öÑ­»·
+		if (wanjia == 3) //è¾“å…¥3é€€å‡ºå¾ªç¯
 			break;
-		printf("\nÄã³öÁË====>");
+		printf("\nä½ å‡ºäº†====>");
 		switch (wanjia)
 		{
-		case 0:printf("Ê¯Í·\n");
+		case 0:printf("çŸ³å¤´\n");
 			break;
-		case 1:printf("¼ôµ¶\n");
+		case 1:printf("å‰ªåˆ€\n");
 			break;
-		case 2:printf("²¼ \n");
+		case 2:printf("å¸ƒ \n");
 			break;
 		}
-		//¼ÆËãµçÄÔ
+		//è®¡ç®—ç”µè„‘
 		srand((unsigned)time(NULL));
 		computer = rand() % 3;
-		printf("µçÄÔ³öÁË==>");
+		printf("ç”µè„‘å‡ºäº†==>");
 		switch (computer)
 		{
-		case 0:printf("Ê¯Í·\n");
+		case 0:printf("çŸ³å¤´\n");
 			break;
-		case 1:printf("¼ôµ¶\n");
+		case 1:printf("å‰ªåˆ€\n");
 			break;
-		case 2:printf("²¼ \n");
+		case 2:printf("å¸ƒ \n");
 			break;
 		}
-		//¼ÆËãÊäÓ®
+		//è®¡ç®—è¾“èµ¢
 		if (wanjia == computer) {
-			printf("\n     Æ½¾Ö\n\n\n");
+			printf("\n     å¹³å±€\n\n\n");
 		}
 		else if (wanjia == 0 && computer == 1 || wanjia == 1 && computer == 2 || wanjia == 2 && computer == 0) {
-			printf("\n     ÄãÓ®ÁË\n\n\n");
+			printf("\n     ä½ èµ¢äº†\n\n\n");
 		}
 		else if (wanjia == 1 && computer == 0 || wanjia == 2 && computer == 1 || wanjia == 0 && computer == 2) {
-			printf("\n      ÄãÊäÁË\n\n\n");
+			printf("\n      ä½ è¾“äº†\n\n\n");
 		}
 	} 
 	return 0;
