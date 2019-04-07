@@ -5,36 +5,44 @@
 
 int main(int argc, char const* argv[])
 {
-	int a[100], b[100],x[100], i = 0,j;
+	int a[100], b[100], x[100], j;
 	srand((unsigned)time(NULL));//用时间初始化随机数种子库,unsigned无符号型
-	
 
-	for (j=0;j<100;j++)
+
+	for (j = 0; j < 100; j++)
 	{
 		a[j] = rand() % 10;
 		b[j] = rand() % 10;
 		x[j] = rand() % 2;
 	}
-
-
-	while (i < 100) {
-		
-		
-	
-		switch (x) {
+	for (j = 0; j < 100; j++)
+	{
+		switch (x[j]) {
 		case(0):
-			if (a<b) 
-				printf("(%d) %d-%d=%d\n",i+1, b, a,b-a);
+			if (a[j] < b[j])
+				printf("(%d) %d-%d=\n", j + 1, b[j], a[j]);
 			else
-				printf("(%d)%d-%d=%d\n",i+1, a, b,a-b);
+				printf("(%d) %d-%d=\n", j + 1, a[j], b[j]);
 			break;
 		case(1):
-				printf("(%d)%d+%d=%d\n",i+1, a, b,a+b);
+			printf("(%d) %d+%d=\n", j + 1, a[j], b[j]);
 			break;
-				   }
-
-		i++;
+		}
 	}
-
+	
+	for (j = 0; j < 100; j++)
+	{
+		switch (x[j]) {
+		case(0):
+			if (a[j] < b[j])
+				printf("(%d) %d-%d=%d\n", j + 1, b[j], a[j], b[j] - a[j]);
+			else
+				printf("(%d) %d-%d=%d\n", j + 1, a[j], b[j], a[j] - b[j]);
+			break;
+		case(1):
+			printf("(%d) %d+%d=%d\n", j + 1, a[j], b[j], a[j] + b[j]);
+			break;
+		}
+	}
 	return 0;
 }
