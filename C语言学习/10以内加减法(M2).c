@@ -2,15 +2,22 @@
 #include <stdlib.h>//随机数
 #include <time.h>//调用时间
 #include <math.h>//数学函数
-
+/*
+a+b=
+分别,随机a,随机b,10000个,放入数组中
+随机x,switch判断正负号,10000个,放入数组
+定义2个文件指针fp1>>>没有答案的题目,fp2>>>有答案的题目
+i,题目总数
+j,循环次数
+*/
 int main(int argc, char const* argv[])
 {
 	int a[10000], b[10000], x[10000], j,i;
 	srand((unsigned)time(NULL));//用时间初始化随机数种子库,unsigned无符号型
 	FILE* fp1,*fp2;
 	//fp1 = fopen("1.txt", "w"); ????夹私货?fopen不让用????????
-	fopen_s(&fp1, "没有答案的题目.txt", "w");
-	fopen_s(&fp2, "有答案的题目.txt", "w");
+		fopen_s(&fp1, "没有答案的题目.txt", "w");
+		fopen_s(&fp2, "有答案的题目.txt", "w");
 
 	printf("请输入你要出多少道题目(最多10000),文件保存在程序目录下\n");
 	scanf_s("%d", &i);
@@ -29,7 +36,7 @@ int main(int argc, char const* argv[])
 				fprintf(fp1, "(%d) %d-%d=\n", j + 1, a[j], b[j]);
 			break;
 		case(1):
-			fprintf(fp1, "(%d) %d+%d=\n", j + 1, a[j], b[j]);
+				fprintf(fp1, "(%d) %d+%d=\n", j + 1, a[j], b[j]);
 			break;
 		}
 	}
@@ -42,7 +49,7 @@ int main(int argc, char const* argv[])
 				fprintf(fp2, "(%d) %d-%d=%d\n", j + 1, a[j], b[j], a[j] - b[j]);
 			break;
 		case(1):
-			fprintf(fp2, "(%d) %d+%d=%d\n", j + 1, a[j], b[j], a[j] + b[j]);
+				fprintf(fp2, "(%d) %d+%d=%d\n", j + 1, a[j], b[j], a[j] + b[j]);
 			break;
 		}
 	}
