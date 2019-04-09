@@ -1,32 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>//Ëæ»úÊı
-#include <time.h>//µ÷ÓÃÊ±¼ä
-#include <math.h>//ÊıÑ§º¯Êı
+#include <stdlib.h>//éšæœºæ•°
+#include <time.h>//è°ƒç”¨æ—¶é—´
+#include <math.h>//æ•°å­¦å‡½æ•°
 /*
-ÊÇ·ñ¹¹³ÉÈı½ÇĞÎa+b>c,a+c>b,b+c>c
-µÈ±ßÈı½ÇĞÎ a=b=c
-µÈÑüa=b»òa=c»òb=c
-Ö±½Ça2+b2=c2»òa2+c2=b2»òb2+c2=a2
+æ˜¯å¦æ„æˆä¸‰è§’å½¢a+b>c,a+c>b,b+c>c
+ç­‰è¾¹ä¸‰è§’å½¢ a=b=c
+ç­‰è…°a=bæˆ–a=cæˆ–b=c
+ç›´è§’a2+b2=c2æˆ–a2+c2=b2æˆ–b2+c2=a2
 */
 int main() {
 	int a, b, c;
 	scanf_s("%d %d %d", &a, &b, &c);
 		if (a + b > c&&a + c > b&&b + c > a) {
 			if (a == b && a == c && b == c) {
-			printf("µÈ±ßÈı½ÇĞÎ");
+			printf("ç­‰è¾¹ä¸‰è§’å½¢");
 			}
 			else if (a == b || a == c || b == c) {
-			printf("µÈÑü");
+			printf("ç­‰è…°");
 				}
 				else if (a*a + b * b == c * c || a * a + c * c == b * b || b * b + c * b == a * a) {
-			printf("Ö±½Ç");
+			printf("ç›´è§’");
 				}
 				else {
-				printf("²»ÊÇÌØÊâÈı½ÇĞÎ");
+				printf("ä¸æ˜¯ç‰¹æ®Šä¸‰è§’å½¢");
 			}
 		}
 		else{
-		printf("²»¹¹³ÉÈı½ÇĞÎ");
+		printf("ä¸æ„æˆä¸‰è§’å½¢");
 	}
 	return 0;
 }
