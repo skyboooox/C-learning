@@ -2,7 +2,7 @@
 #include <stdlib.h>//随机数
 #include <time.h>//调用时间
 #include <math.h>//数学函数
-#define MAXSIZE 84999
+#define MAXSIZE 84998
 /*
 a+b=
 分别,随机>>>a,随机>>>b,84999个,放入数组中

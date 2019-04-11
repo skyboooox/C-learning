@@ -2,7 +2,7 @@
 #include <stdlib.h>//随机数
 #include <time.h>//调用时间
 #include <math.h>//数学函数
-#define MAXSIZE 8544
+#define MAXSIZE 84998
 //constexpr auto MAXSIZE = 854;//将宏转换为constexpr,这是什么玩意???
 
 int main(int argc, char const* argv[])
@@ -19,7 +19,7 @@ int main(int argc, char const* argv[])
 	char a[MAXSIZE];
 
 	while (!feof(fp1)){//判断文档结尾 
-		i++;
+		i++;//计数器
 		fgets(a, 1024, fp1);  //读取一行
 		fprintf(fp2,"%d.\n%s",i, a); //输出
 	}
