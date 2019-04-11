@@ -2,7 +2,7 @@
 /*
 am数组,存储每天上午的课程
 
-二位数组??
+二位数组???
 */
 int main(int argc, char const* argv[])
 {
