@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>//随机数
+#include <time.h>//调用时间
+#include <math.h>//数学函数
 #include<stdio.h>
 int main(){
     int x,y,z;
