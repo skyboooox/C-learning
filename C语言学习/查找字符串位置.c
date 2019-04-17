@@ -5,31 +5,40 @@
 #include <string.h>
 #define MAXSIZE 84997
 
-//constexpr auto MAXSIZE = 854;//将宏转换为constexpr,这是什么玩意???
-
 int main()
 {
-	char a[] = "1234567890123456789009876543211234567890";
-	char* s;
-	s = strchr(a, '3');
-	int x[2];
-
-	while (s != NULL) {
-		for (int i = 0; i < 2; i++)
-		{
-			x[i] = s - a;
-			s = strchr(s + 1, '7');
-		}
-		int f, l;//f,第一个数.l,最后一个数
-		f = x[0];
-		l = x[1];
-		while (l >= f)
-		{
-			printf("%c", a[f]);
-			f++;
-		}
-		printf("\n");
+	char a[] = "12312235732573345656456734973545607";//准备 要搜索的 数组
+	char* sf = strchr(a, '3');
+	char* sl = strchr(a, '7');
+	int xf[MAXSIZE];//存放 第一个 要搜索字符串位置 的数组
+	int xl[MAXSIZE];
+	int i=0;//计数器
+	while (sf != NULL) {
+		xf[i] = sf - a;
+		sf = strchr(sf + 1, '3');
+		i++;
 	}
-	return 0;
+	i = 0;//初始化计数器
+	while (sl != NULL) {
+		xl[i] = sl - a;
+		sl = strchr(sl + 1, '7');
+		i++;
+	}
+		int f=0, l=0;//f,第一个数.l,最后一个数
+		i = 0;
+		print:
+			f = xf[i];
+			if(f <0)//vs2019没有用到的数组元素是-858993460
+				return 0;
+			l = xl[i];
+			while (l >= f)
+			{
+				printf("%c", a[f]);
+				f++;
+			}
+			printf("\n");
+			i++;
+			if (f >0)
+				goto print;
 }
 
