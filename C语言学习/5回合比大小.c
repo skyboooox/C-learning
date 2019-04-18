@@ -1,15 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/*
+ç”µè„‘å’Œç”¨æˆ·åˆ†åˆ«éšæœº5ä¸ªæ•°å­—
+ç´¯åŠ åæœ€å¤§çš„è·èƒœ
+*/
 int main()
 {
-	printf("»¶Ó­,±¾ÓÎÏ·ÎªÃ¿´ÎºÍµçÄÔËæ»ú³éÊı×Ö,5»ØºÏºó×î´óµÄÎªÊ¤Àû·½\n\n");
+	printf("æ¬¢è¿,æœ¬æ¸¸æˆä¸ºæ¯æ¬¡å’Œç”µè„‘éšæœºæŠ½æ•°å­—,5å›åˆåæœ€å¤§çš„ä¸ºèƒœåˆ©æ–¹\n\n");
 	
-	printf("ÇëÊäÈëÄãµÄÃû×Ö,1¸ö×Ö\n");
+	printf("è¯·è¾“å…¥ä½ çš„åå­—,1ä¸ªå­—\n");
 	char name;
 	scanf_s("%c", &name);
-	printf("ÄãµÄÃû×ÖÊÇ%c,¿ªÊ¼ÓÎÏ·\n",name);
-	//Éú³ÉËæ»úÊı
+	printf("ä½ çš„åå­—æ˜¯%c,å¼€å§‹æ¸¸æˆ\n",name);
+	//ç”Ÿæˆéšæœºæ•°
 	int a1,a2,a3,a4,a5,b1,b2,b3,b4,b5;
 	srand((unsigned)time(NULL));
 		a1 = rand() % 10;
@@ -23,8 +27,8 @@ int main()
 		b3 = rand() % 10;
 		b4 = rand() % 10;
 		b5 = rand() % 10;
-	//¼ÆËãÃ¿»ØºÏ
-	int c2, d2;//c,µçÄÔ×ÜÊı.dÓÃ»§×ÜÊı
+	//è®¡ç®—æ¯å›åˆ
+	int c2, d2;//c,ç”µè„‘æ€»æ•°.dç”¨æˆ·æ€»æ•°
 		c2 = a1 + a2;
 		d2 = b1 + b2;
 	int c3, d3;
@@ -37,48 +41,48 @@ int main()
 		c5 = c4 + a5;
 		d5 = d4 + a5;
 
-	//1»ØºÏ
-	printf("\nµÚ 1 »ØºÏ:\n");
-	printf("µçÄÔ:"); 
+	//1å›åˆ
+	printf("\nç¬¬ 1 å›åˆ:\n");
+	printf("ç”µè„‘:"); 
 	printf("%d",a1); 
 	printf("\n");
 	printf("%c:",name);
 	printf("%d", b1);
 
-	//2»ØºÏ
-	printf("\n\nµÚ 2 »ØºÏ:\n");
-	printf("µçÄÔ:");
+	//2å›åˆ
+	printf("\n\nç¬¬ 2 å›åˆ:\n");
+	printf("ç”µè„‘:");
 	printf("%d", c2);
 	printf("\n");
 	printf("%c:", name);
 	printf("%d", d2);
 
-	//3»ØºÏ
-	printf("\n\nµÚ 3 »ØºÏ:\n");
-	printf("µçÄÔ:");
+	//3å›åˆ
+	printf("\n\nç¬¬ 3 å›åˆ:\n");
+	printf("ç”µè„‘:");
 	printf("%d", c3);
 	printf("\n");
 	printf("%c:", name);
 	printf("%d", d3);
 
-	//4»ØºÏ
-	printf("\n\nµÚ 4 »ØºÏ:\n");
-	printf("µçÄÔ:");
+	//4å›åˆ
+	printf("\n\nç¬¬ 4 å›åˆ:\n");
+	printf("ç”µè„‘:");
 	printf("%d", c4);
 	printf("\n");
 	printf("%c:", name);
 	printf("%d", d4);
 
-	//5»ØºÏ
-	printf("\n\nµÚ 5 »ØºÏ:\n");
-	printf("µçÄÔ:");
+	//5å›åˆ
+	printf("\n\nç¬¬ 5 å›åˆ:\n");
+	printf("ç”µè„‘:");
 	printf("%d", c5);
 	printf("\n");
 	printf("%c:", name);
 	printf("%d", d5);
 	if (c5 < d5)
-		printf("\n\nÄãÓ®ÁË");
+		printf("\n\nä½ èµ¢äº†");
 	else
-		printf("\n\nÄãÊäÁË");
+		printf("\n\nä½ è¾“äº†");
 	return 0;
 }
