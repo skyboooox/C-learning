@@ -4,7 +4,11 @@
 #include <math.h>//数学函数
 #define MAXSIZE 84998
 //constexpr auto MAXSIZE = 854;//将宏转换为constexpr,这是什么玩意???
-
+/*
+程序同目录下的1.txt文件(没有要手动创建)
+为每一行添加一个序号
+添加后的文件另存成 2.txt
+*/
 int main(int argc, char const* argv[])
 {
 	FILE* fp1,*fp2;//,*fp2;//定义文件指针
