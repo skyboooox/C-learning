@@ -1,6 +1,12 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>//随机数
 #include <time.h>//调用时间
+/*
+电脑和用户分别随机5个数字
+累加后最大的获胜
+功能和 5回合比大小.c 一样
+此版本只是精简部分代码
+*/
 int main()
 {
 	printf("欢迎,本游戏为每次和电脑随机抽数字,5回合后最大的为胜利方\n\n");
