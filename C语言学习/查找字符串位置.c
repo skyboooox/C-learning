@@ -11,38 +11,37 @@
 */
 int main()
 {
-	char a[] = "12312235732573345656456734973545607";//准备 要搜索的 数组
-	char* sf = strchr(a, '3');
-	char* sl = strchr(a, '7');
+	char a[] = "aciuahkjhiuzxiuhaciuhkntrzx";//准备 要搜索的 数组
+	char* sf = strstr(a, "ac");
+	char* sl = strstr(a, "zx");
 	int xf[MAXSIZE];//存放 第一个 要搜索字符串位置 的数组
 	int xl[MAXSIZE];
-	int i=0;//计数器
+	int i = 0;//计数器
 	while (sf != NULL) {
 		xf[i] = sf - a;
-		sf = strchr(sf + 1, '3');
+		sf = strstr(sf + 1, "ac");
 		i++;
 	}
 	i = 0;//初始化计数器
 	while (sl != NULL) {
 		xl[i] = sl - a;
-		sl = strchr(sl + 1, '7');
+		sl = strstr(sl + 1, "zx");
 		i++;
 	}
-		int f=0, l=0;//f,第一个数.l,最后一个数
-		i = 0;
-		print:
-			f = xf[i];
-			if(f <0)//vs2019没有用到的数组元素是-858993460
-				return 0;
-			l = xl[i];
-			while (l >= f)
-			{
-				printf("%c", a[f]);
-				f++;
-			}
-			printf("\n");
-			i++;
-			if (f >0)
-				goto print;
+	int f = 0, l = 0;//f,第一个数.l,最后一个数
+	i = 0;
+print:
+	f = xf[i];
+	if (f < 0)//vs2019没有用到的数组元素是-858993460
+		return 0;
+	l = xl[i];
+	while (l >= f)
+	{
+		printf("%c", a[f]);
+		f++;
+	}
+	printf("\n");
+	i++;
+	if (f > 0)
+		goto print;
 }
-
