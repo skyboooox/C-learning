@@ -18,14 +18,15 @@ int main()
 	char a[MAXSIZE];
 
 	//char a[] = "12312235732573345656456734973545607";//准备 要搜索的 数组
-	char* sf = strchr(a, 'tps:');
-	char* sl = strchr(a, '"');
+	
 	int xf[MAXSIZE];//存放 第一个 要搜索字符串位置 的数组
 	int xl[MAXSIZE];
 	int i = 0;//计数器
 
 	while (!feof(fp1)) {//判断文档结尾 
 		fgets(a, 1024, fp1);  //读取一行
+		char* sf = strpbrk(a, 'tps:');
+		char* sl = strpbrk(a, '"');
 		while (sf != NULL) {
 			xf[i] = sf - a;
 			sf = strchr(sf + 1, 'tps:');
