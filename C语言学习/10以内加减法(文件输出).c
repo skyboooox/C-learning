@@ -2,11 +2,12 @@
 #include <stdlib.h>//随机数
 #include <time.h>//调用时间
 #include <math.h>//数学函数
-#define MAXSIZE 84998
+#define MAXSIZE 84998//定义最大个数(VS2019通过测试) 
 
 /*
 用于随机出题,十以内的加减法.
 文件b保存在源代码文件同一目录下.
+VS2019最大题目数是84998,如果不能运行,更改宏处理 MAXSIZE
 
 
 a+b=
