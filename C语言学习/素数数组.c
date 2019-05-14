@@ -16,45 +16,38 @@
 #include <time.h>//操作日期和时间
 #define MAXSIZE 84998//定义最大个数(VS2019通过测试)
 
-int isprime(int x)/*判断n是否为素数的函数*/
-{
+int isprime(int x){
 	int r = 1;
 	if (x == 1 || x != 2 && x % 2 == 0) {
 		r = 0;
 	}
 	for (int j = 3; j < sqrt(x); j += 2) {
-		if (x % j == 0)
-		{
+		if (x % j == 0){
 			r = 0;
 			break;
 		}
 	}
 	return r;
 }
-int main(int argc, char const* argv[])
-{
-	const int maxNum = 1000;
+int main(int argc, char const* argv[]){
+	const int maxNum = 10;
 	int isPrime[maxNum];
 	int x, i;
-	for (int i = 0; i < maxNum; ++i)
-	{
+	for (int i = 0; i < maxNum; ++i){
 		isPrime[i] = 1;
 	}
-	for (x = 2; x < maxNum; ++x)
-	{
-		if (isPrime[x])
-		{
+	for (x = 2; x < maxNum; ++x){
+		if (isPrime[x]){
 			for (i = 2; i * x < maxNum; ++i)
 			{
 				isPrime[i * x] = 0;
 			}
 		}
 	}
-	for (i = 2; i < maxNum; ++i)
-	{
+	for (i = 2; i < maxNum; ++i){
 		if (isPrime[i]) {
 			printf("%d\n", i);
 		}
-	} 
+	}
 	return 0;
 }

@@ -6,7 +6,7 @@
 #include <limits.h>//各种变量类型的各种属性
 #include <locale.h>//特定地域的设置，比如日期格式和货币符号
 #include <math.h>//数学函数,所有 double 类型的参数
-#include <setjmp.h>//存储宏 setjmp() 和函数 longjmp() 
+#include <setjmp.h>//存储宏 setjmp() 和函数 longjmp()
 #include <signal.h>//变量类型 sig_atomic_t、两个函数调用和一些宏来处理程序执行期间报告的不同信号。
 #include <stdarg.h>//一个变量类型 va_list 和三个宏，这三个宏可用于在参数个数未知（即参数个数可变）时获取函数中的参数。
 #include <stddef.h>//
@@ -17,16 +17,18 @@
 #define MAXSIZE 84998//定义最大个数(VS2019通过测试)
 int isprime(int x)/*判断n是否为素数的函数*/
 {
-	int r;
-	for (int j = 2; j < x; j++)
+	int r = 1;
+	if (x == 1||x!=2&&x%2==0) {
+		r = 0;
+	}
+	for (int j = 3; j < x; j+=2) {
 		if (x % j == 0)
 		{
 			r = 0;
 			break;
 		}
-		else
-			r = 1;
-	return(r);
+	}
+	return r;
 }
 int main()
 {
