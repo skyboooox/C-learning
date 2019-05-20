@@ -16,8 +16,6 @@
 #include <time.h>//操作日期和时间
 #define MAXSIZE 84998//定义最大个数(VS2019通过测试) 
 
-//输入一串字符,统计输入的类型(大写,小写,数字)
-
 int main(int argc, char const* argv[]){
 	int da_xie = 0,xiao_xie = 0,shu_zi = 0,qi_ta = 0;
 	char a[MAXSIZE];
