@@ -1,6 +1,2 @@
 ﻿  源.c
-C:\Users\zcj\Documents\GitHub\C-learning\C语言学习\临时\源.c(30): warning C4716: “chu”: 必须返回一个值
-C:\Users\zcj\Documents\GitHub\C-learning\C语言学习\临时\源.c(24): warning C4716: “jian”: 必须返回一个值
-C:\Users\zcj\Documents\GitHub\C-learning\C语言学习\临时\源.c(27): warning C4716: “cheng”: 必须返回一个值
-C:\Users\zcj\Documents\GitHub\C-learning\C语言学习\临时\源.c(21): warning C4716: “jia”: 必须返回一个值
   临时.vcxproj -> C:\Users\zcj\Documents\GitHub\C-learning\C语言学习\临时\Debug\临时.exe
