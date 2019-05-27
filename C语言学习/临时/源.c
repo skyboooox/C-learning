@@ -15,27 +15,48 @@
 #include <string.h>//字符串
 #include <time.h>//操作日期和时间
 #define MAXSIZE 84998//定义最大个数(VS2019通过测试) 
-
-//在屏幕上输出九九乘法表
-
-int main(int argc, char const* argv[]) {
-	for (int i = 1; i <= 9; i++) {
-		for (int j = 9; j >= i; j--)
-			printf("%d*%d=%2d  ", i, j, i * j);
-		printf("\n");
-	}
-	return 0;
+// 0>>退出 1>>加 2>>减 3>>乘 4>>除
+int jia(int a,int b) {// 1>>加
+	printf("%d", a + b);
 }
-/*
-输出如下所示:
+int jian(int a, int b) {// 2>>减
+	printf("%d", a - b);
+}
+int cheng(int a, int b) {// 3>>乘
+	printf("%d", a * b);
+}
+int chu(int a, int b) {// 4>>除
+	printf("%d", a / b);
+}
+int main(int argc, char const* argv[]) {
+	int x, y, n;
+	printf("请输入一个数字\n0>>退出 1>>加 2>>减 3>>乘 4>>除\n");
+	scanf_s("%d", &n);
+	
+	switch (n) {
+	case(0):
+ 		printf("退出");
+		return 0;
+		break;
+	case(1):
+		printf("请输入a+b=c的a与b\n");
+		scanf_s("%d%d", &x, &y);
+		jia(x,y); break;
+	case(2):
+		printf("请输入a+b=c的a与b\n");
+		scanf_s("%d%d", &x, &y);
+		jian(x,y); break;
+	case(3):
+		printf("请输入a+b=c的a与b\n");
+		scanf_s("%d%d", &x, &y);
+		cheng(x,y); break;
+	case(4):
+		printf("请输入a+b=c的a与b\n");
+		scanf_s("%d%d", &x, &y);
+		chu(x,y); break;
+	default:
+		printf("输入错误,请重新输入");
+		break;
+	}
 
-1*1= 1
-2*1= 2  2*2= 4
-3*1= 3  3*2= 6  3*3= 9
-4*1= 4  4*2= 8  4*3=12  4*4=16
-5*1= 5  5*2=10  5*3=15  5*4=20  5*5=25
-6*1= 6  6*2=12  6*3=18  6*4=24  6*5=30  6*6=36
-7*1= 7  7*2=14  7*3=21  7*4=28  7*5=35  7*6=42  7*7=49
-8*1= 8  8*2=16  8*3=24  8*4=32  8*5=40  8*6=48  8*7=56  8*8=64
-9*1= 9  9*2=18  9*3=27  9*4=36  9*5=45  9*6=54  9*7=63  9*8=72  9*9=81
-*/
+}
