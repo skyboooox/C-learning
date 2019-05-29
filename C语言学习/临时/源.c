@@ -1,28 +1,38 @@
-#include <stdio.h>
-int main() {
-	int hanoi(int, char, char, char);
-	int n, counter;
-	printf("Input the number of diskes：");
-	scanf_s("%d", &n);
-	printf("\n");
-	counter = hanoi(n, 'A', 'B', 'C');
-	return 0;
-}
-int hanoi(int n, char x, char y, char z) {
-	int move(char, int, char);
-	if (n == 1)
-		move(x, 1, z);
-	else {
-		hanoi(n - 1, x, z, y);
-		move(x, n, z);
-		hanoi(n - 1, y, x, z);
+//祖传头文件
+#include <assert.h>//防御式编程
+#include <ctype.h>//检测和转换单个字
+#include <errno.h>//错误代码有关
+#include <float.h>//浮点值相关的依赖于平台的常量
+#include <limits.h>//各种变量类型的各种属性
+#include <locale.h>//特定地域的设置，比如日期格式和货币符号
+#include <math.h>//数学函数,所有 double 类型的参数
+#include <setjmp.h>//存储宏 setjmp() 和函数 longjmp() 
+#include <signal.h>//变量类型 sig_atomic_t、两个函数调用和一些宏来处理程序执行期间报告的不同信号。
+#include <stdarg.h>//一个变量类型 va_list 和三个宏，这三个宏可用于在参数个数未知（即参数个数可变）时获取函数中的参数。
+#include <stddef.h>//
+#include <stdio.h>//各种函数来执行输入和输出
+#include <stdlib.h>//四个变量类型、一些宏和各种通用工具函数
+#include <string.h>//字符串
+#include <time.h>//操作日期和时间
+#define MAXSIZE 84998//定义最大个数(VS2019通过测试)
+#define PI 3.1415926 
+
+int days(int month, int day) {
+	int i, days = 0;
+	int a[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
+	for (i = month - 2; i >= 0; i--) {
+		day = a[i];
+		days += day;
 	}
-	return 0;
+	return days;
 }
-int move(char getone, int n, char putone) {
-	static int k = 1;
-	printf("%2d:%3d # %c---%c\n", k, n, getone, putone);
-	if (k++ % 3 == 0)
-		printf("\n");
+int main(int argc, char const* argv[]) {
+	int month, day;
+	char w[8][7] = { "(+_+)/","星期一","星期二","星期三","星期四","星期五","星期六","星期天" };
+	printf("请输入月日");
+	scanf_s("%d%d", &month, &day);
+	day = day + days(month, day);
+	printf("第%d天\t", day);
+	printf("%s", w[day%7+1]);
 	return 0;
 }
