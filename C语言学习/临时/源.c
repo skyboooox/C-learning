@@ -27,12 +27,12 @@ int days(int month, int day) {
 	return days;
 }
 int main(int argc, char const* argv[]) {
-	int month, day;
-	char w[8][7] = { "(+_+)/","星期一","星期二","星期三","星期四","星期五","星期六","星期天" };
 	printf("请输入月日");
+	int month, day;
 	scanf_s("%d%d", &month, &day);
 	day = day + days(month, day);
 	printf("第%d天\t", day);
-	printf("%s", w[day%7+1]);
+	char w[8][7] = { "(+_+)/","星期一","星期二","星期三","星期四","星期五","星期六","星期天" };
+	printf("%s", w[day % 7 + 1]);
 	return 0;
 }
