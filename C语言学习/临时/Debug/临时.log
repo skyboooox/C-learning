@@ -1,2 +1,103 @@
 ﻿  源.c
-  临时.vcxproj -> C:\Users\zcj\Documents\GitHub\C-learning\C语言学习\临时\Debug\临时.exe
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(20): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(20): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(20): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(22): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(28): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(28): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(28): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cstdlib(30): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(18): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(18): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(18): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(24): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(30): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(30): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(30): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(32): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(38): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(38): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(38): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(40): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(46): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(46): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(46): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(48): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(54): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(54): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(54): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(56): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(62): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(62): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(62): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(64): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(70): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(70): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(70): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(72): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(78): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(78): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(78): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(80): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(86): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(86): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(86): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(88): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(94): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(94): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(94): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(96): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(102): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(102): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(102): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(104): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(110): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(110): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(110): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(112): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(118): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(118): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(118): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(120): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(126): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(126): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(126): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(128): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(134): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(134): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(134): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(136): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(142): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(142): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(142): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(144): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(150): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(150): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(150): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(152): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(158): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(158): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(158): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(160): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(166): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(166): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(166): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(168): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(174): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(174): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(174): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(176): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(182): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(182): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(182): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(184): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(190): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(190): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(190): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(192): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(198): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(198): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(198): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(204): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(210): error C2061: 语法错误: 标识符“noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\cmath(210): fatal error C1003: 错误计数超过 100；正在停止编译

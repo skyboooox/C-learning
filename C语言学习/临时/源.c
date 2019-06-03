@@ -1,38 +1,23 @@
-//祖传头文件
-#include <assert.h>//防御式编程
-#include <ctype.h>//检测和转换单个字
-#include <errno.h>//错误代码有关
-#include <float.h>//浮点值相关的依赖于平台的常量
-#include <limits.h>//各种变量类型的各种属性
-#include <locale.h>//特定地域的设置，比如日期格式和货币符号
-#include <math.h>//数学函数,所有 double 类型的参数
-#include <setjmp.h>//存储宏 setjmp() 和函数 longjmp() 
-#include <signal.h>//变量类型 sig_atomic_t、两个函数调用和一些宏来处理程序执行期间报告的不同信号。
-#include <stdarg.h>//一个变量类型 va_list 和三个宏，这三个宏可用于在参数个数未知（即参数个数可变）时获取函数中的参数。
-#include <stddef.h>//
-#include <stdio.h>//各种函数来执行输入和输出
-#include <stdlib.h>//四个变量类型、一些宏和各种通用工具函数
-#include <string.h>//字符串
-#include <time.h>//操作日期和时间
-#define MAXSIZE 84998//定义最大个数(VS2019通过测试)
-#define PI 3.1415926 
-
-int days(int month, int day) {
-	int i, days = 0;
-	int a[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
-	for (i = month - 2; i >= 0; i--) {
-		day = a[i];
-		days += day;
-	}
-	return days;
-}
-int main(int argc, char const* argv[]) {
-	printf("请输入月日");
-	int month, day;
-	scanf_s("%d%d", &month, &day);
-	day = day + days(month, day);
-	printf("第%d天\t", day);
-	char w[8][7] = { "(+_+)/","星期一","星期二","星期三","星期四","星期五","星期六","星期天" };
-	printf("%s", w[day % 7 + 1]);
+#include <iostream>
+void print(int a);
+int main() {
+	int a = 456721364;
+	print(a);
+	system("pause");
 	return 0;
 }
+
+void print(int num) {
+	static const char Bit[15][4] = { "","十","百","千","万","十","百","千","亿","十","百","千","万","十","百" };
+	static const char Num[10][4] = { "零","一","二","三","四","五","六","七","八","九" };
+	int numarr[15] = { 0 };
+	int* parr = numarr;
+	for (int quotient = num, remainder = 0; quotient > 0; ) {
+		remainder = quotient % 10;
+		*parr++ = remainder;
+		quotient /= 10;
+	};
+	for (int i = parr - numarr - 1; i >= 0; i--)
+		std::cout << Num[numarr[i]] << Bit[i];
+
+};
